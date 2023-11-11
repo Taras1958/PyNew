@@ -1,16 +1,7 @@
-notes = input("Введите номера нот через пробел: ").split()
-
-for note in notes:
-    note = int(note)
-    if note == 1 or note == 4:
-        print("# до", end=" ")
-    elif note == 2 or note == 5:
-        print("# ре", end=" ")
-    elif note == 3:
-        print("ми", end=" ")
-    elif note == 6:
-        print("фа", end=" ")
-    elif note == 7:
-        print("# фа", end=" ")
-
-print()
+A = {1, 2, 3, 4}
+B = {2, 3, 4, 5, 6}
+C = {4, 5, 6, 9, 10}
+A.intersection_update(B, C)
+print("A =", A)
+print("B =", B)
+print("C =", C)

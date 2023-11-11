@@ -1,14 +1,12 @@
-def palindrom(s):
-    if len(s) <= 1:
-        return True
-    if s[0] != s[-1]:
-        return False
-    return palindrom(s[1:-1])
-#
-d = 'qweryrewq'
-print(palindrom(d))
+import string
 
-# s = 'кабак'
 
-# # print(s[1:-1])
-# print(d[1:-1])
+def my_func(st):
+    all_chars = string.ascii_lowercase + string.ascii_uppercase + string.digits + '_@.'
+    for i in st:
+        if i not in all_chars:
+            print('НЕТ')
+    print('ДА')
+
+st1 = input()
+my_func(st1)
